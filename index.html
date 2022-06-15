@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<!-- Header-area -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content flex">
+                <div class="logo">
+                    <h1>LOGO</h1>
+                </div>
+                <div class="menuvar">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Post</a>
+                    <a href="">Profile</a>
+                    <a href="" class="bg-primary" id="create"><span><i class="fa-solid fa-pen-to-square"></i></span>Create New Post</a>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Main-body -->
+    <div class="main-body">
+        <div class="container">
+            <div class="flex">
+                <div class="profile">
+                    <div class="profile-content bg-white">
+                        <div class="img">
+                            <img src="images/profile.png" alt="" class="w-100">
+                        </div>
+                        <div class="name">
+                            <h2>MD.Bojlu</h2>
+                            <p>Junior Frontend Developer</p>
+                        </div>
+                        <div class="others">
+                            <p><i class="fa-solid fa-house-user"></i> <span>Live's in </span>Dhaka Bangladesh</p>
+
+                            <p><i class="fa fa-users" aria-hidden="true"></i><span>Followed by</span> 564 People</p>
+
+                            <p><i class="fa-brands fa-github"></i><span>Github</span> md-hasan-mahmud</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-body" id="postBody">
+                    <!-- Demo box -->
+                <!-- <div class="post">
+                        <img src="images/img.jpg" alt="" class="w-100">
+                        <div class="content">
+                            <h4>Title</h4>
+                            <p>Hello javascript</p>
+                        </div>
+                    </div>  -->
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- input form -->
+    <div class="form" id="inputForm">
+        <form action="" class="form-group w-50 bg-white" id="form">
+            <p id="remove">x</p>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="Title">
+
+            <label for="image">Post Image</label>
+            <input type="imag" name="image" id="image" class="form-control" readonly>
+
+            <label for="comment">Post Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="6" class="form-control" placeholder="Written Your Comment"></textarea>
+
+            <input type="submit" name="submit" id="submit" value="Done" class="btn btn-primary mt-5 py-2 px-4">
+        </form>
+    </div>
+    <script src="src/app.js"></script>
+</body>

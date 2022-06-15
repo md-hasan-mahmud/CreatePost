@@ -1,0 +1,234 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #e3e4e5;
+    overflow: hidden;
+}
+/* header-area css */
+.header {
+    overflow: hidden;
+    background: #FFF;
+
+}
+
+.header .header-content {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-content .logo h1 {
+    font-weight: 800;
+    color: blueviolet;
+}
+
+/* menuvar css */
+.header .header-content .menuvar a {
+    text-decoration: none;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(69, 68, 68);
+    transition: .5s;
+}
+
+.header .header-content .menuvar a i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.header .header-content .menuvar a:hover {
+    color: black;
+}
+
+.header .header-content .menuvar a:last-child {
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 8px 25px;
+ }
+
+/* main body profile css */
+.main-body .profile {
+  padding: 20px;
+  width: 25%;
+  box-sizing: border-box;
+  height: calc(100vh - 60px);
+}
+
+.main-body .profile .profile-content {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.main-body .profile .profile-content .img {
+    width: 100%;
+}
+
+.main-body .profile .profile-content .name h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+
+.main-body .profile .profile-content .name p {
+    text-align: center;
+    color: gray;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main-body .profile .profile-content .others p { 
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+    letter-spacing: -.6px;
+}
+
+.main-body .profile .profile-content .others p i {
+    font-size: 18px;
+    margin-right: 5px;
+    color: rgb(0, 191, 255);
+}
+
+.main-body .profile .profile-content .others p:nth-child(2) i {
+    color: rgb(0, 119, 255);
+}
+
+.main-body .profile .profile-content .others p span {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+
+
+ /* main-body post box css */
+ .main-body .flex {
+    display: flex;
+ }
+
+ .main-body .flex .post-body {
+    display: flex;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 15px;
+ }
+
+ .main-body .flex .post-body::-webkit-scrollbar {
+    display: none;
+ }
+
+ .main-body .flex .post {
+    flex-basis: 30%;
+    background: #FFF;
+    margin-right: 5%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 202, 202);
+ }
+
+ .main-body .flex .post:nth-child(3n) {
+    margin-right: 0%;
+ }
+
+ .main-body .flex .post .content {
+    padding: 12px;
+ }
+
+ .main-body .flex .post .content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0px;
+ }
+
+ .main-body .flex .post .content p {
+    color: black;
+    font-weight: 500;
+ }
+
+ /* form css */
+
+.form {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.form form {
+    border-radius: 10px;
+    padding: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.form form input,
+.form form textarea {
+    font-weight: 500;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.form form p {
+    text-align: right;
+    width: 20px;
+    height: 20px;
+    margin-top: -20px;
+    float: right;
+    text-align: center;
+    line-height: 20px;
+    background: aqua;
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.form form p:hover {
+    cursor: pointer;
+    background: rgb(1, 199, 199);
+}
+
+ .form form label {
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 8px;
+ }
+
+ .form form input {
+    margin-bottom: 18px;
+ }
+
+ .form form input:last-child {
+    display: block;
+    font-size: 12px;
+    float: right;
+    color: #FFF;
+    font-weight: 500;
+ }
