@@ -95,7 +95,7 @@ body {
 .main-body .profile .profile-content .others p { 
     font-weight: 600;
     color: black;
-    font-size: 17px;
+    font-size: 16px;
     letter-spacing: -.6px;
 }
 
@@ -110,8 +110,8 @@ body {
 }
 
 .main-body .profile .profile-content .others p span {
-    font-weight: 500;
-    color: rgb(0, 0, 0);
+    font-weight: 400;
+    color: black;
 }
 
 
