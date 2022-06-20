@@ -121,17 +121,20 @@ body {
     display: flex;
  }
 
+ .main-body .flex .post-body-container {
+    height: calc(100vh - 70px);
+    border: 1px solid rgb(202, 202, 202);
+    overflow-y: scroll;
+    flex-basis: 75%;
+ }
+
  .main-body .flex .post-body {
     display: flex;
-    height: calc(100vh - 70px);
-    overflow-y: scroll;
     flex-wrap: wrap;
-    flex-basis: 75%;
-    border: 1px solid rgb(202, 202, 202);
     padding: 15px;
  }
 
- .main-body .flex .post-body::-webkit-scrollbar {
+ .main-body .flex .post-body-container::-webkit-scrollbar {
     display: none;
  }
 
